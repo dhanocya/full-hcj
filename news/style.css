@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+nav .ways{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3em;
+}
+
+button,input{
+    padding: 0.5em;
+    background-color: rgb(212, 212, 251);
+    border: none;
+    box-shadow: 2px 2px ;
+    transition: all 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(237, 237, 186);
+        transform: scale(1.5);
+    }
+}
+
+.ways, ul, li, a {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 1em;
+}
+
+.container{
+    background-color: rgb(212, 212, 251);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.newshol{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    transition: all 0.5s;
+
+    &:hover{
+        transform: scale(0.97);
+        box-shadow: 3px 6px 34px rgb(114, 45, 114);
+    }
+}
+
+.photo{
+    background-color: green;
+}
