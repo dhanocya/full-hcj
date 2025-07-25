@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav,ul, .low-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background-color: plum;
+}
+
+li{
+    list-style: none;
+    &:hover{
+        color: red;
+    }
+}
+
+.hero{
+    height: 100vh;
+    background-color: red;
+    margin: 0.5em;
+}
+
+footer{
+    height: auto;
+    background-color: plum;
+}
+
+.up-footer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.holder{
+}
+
+.footer-ul{
+    display: inline;
+}

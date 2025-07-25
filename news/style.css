@@ -62,3 +62,7 @@ button,input{
 .photo{
     background-color: green;
 }
+
+.navIt.active{
+    color: aqua;
+}
