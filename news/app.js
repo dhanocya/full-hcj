@@ -1,5 +1,5 @@
-const APi_KEY = ""
-const URL = ""
+const APi_KEY = "1dd445ba574c4d5f8e407466ddcc1f19"
+const URL = `https://newsapi.org/v2/everything?q=tesla&from=2025-06-25&sortBy=publishedAt&apiKey=${APi_KEY}`
 
 window.addEventListener("load", () => {
     fetchNews("india")
