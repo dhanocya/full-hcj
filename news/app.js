@@ -1,5 +1,5 @@
 const APi_KEY = "1dd445ba574c4d5f8e407466ddcc1f19"
-const URL = `https://newsapi.org/v2/everything?q=tesla&from=2025-06-25&sortBy=publishedAt&apiKey=${APi_KEY}`
+const url = `https://newsapi.org/v2/everything?q=`
 
 window.addEventListener("load", () => {
     fetchNews("india")
@@ -10,13 +10,14 @@ function road() {
 }
 
 async function fetchNews (query) {
-    const res = await fetch(`${URL}${query}&apiKey${APi_KEY}`)
+    const res = await fetch(`${url}${query}&apiKey=${APi_KEY}`)
     const data = await res.json()
     bindData(data.articles)
+    console.log(data)
 }
 
 function bindData(articles) {
-    const cardContiner = document.getElementById(`#card`);
+    const cardContiner = document.getElementById("card");
     const newstemplate = document.getElementById(`#template`)
 
     cardContiner.innerHTML = ""
