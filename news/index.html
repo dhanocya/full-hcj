@@ -1,45 +1,45 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>news app</title>
+    <title>News App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
       <div class="ways">
-        <div class="logo"><h1 onclick="road()" >logo</h1></div>
+        <div class="logo"><h1 onclick="road()">read news</h1></div>
 
         <ul>
-          <li><a href="" id="poli" onclick="navClick(politics)" class="navIt">politics</a></li>
-          <li><a href="" id="fina" onclick="navClick(finance)" class="navIt">finance</a></li>
-          <li><a href="" id="techno" onclick="navClick(technology)" class="navIt">technology</a></li>
+          <li><a href="#" id="politics" onclick="navClick('politics')" class="navIt">Politics</a></li>
+          <li><a href="#" id="finance" onclick="navClick('finance')" class="navIt">Finance</a></li>
+          <li><a href="#" id="technology" onclick="navClick('technology')" class="navIt">Technology</a></li>
         </ul>
 
         <div class="extra">
-          <input class="search" type="search" placeholder="" />
-          <button class="sebtn">search</button>
+          <input class="search" type="search" placeholder="e.g. Science" />
+          <button class="sebtn">Search</button>
         </div>
       </div>
     </nav>
 
     <main>
-
-      <div id="card">
-
-      </div>
+      <div id="card" class="container"></div>
 
       <template id="template">
-
         <div class="newshol">
           <div class="photo">
-            <img src="" alt="" class="newsImg">
+            <img src="https://via.placeholder.com/400x200" alt="News Image" class="newsImg" />
           </div>
-          <h4 class="newsTitle"></h4>
-          <p class="newsDisc"></p>
-          <p class="newsSource"></p>
+          <div class="card-content">
+            <h4 class="newsTitle">This is the Headline</h4>
+            <p class="newsSource">End Gadget - 2024-08-20</p>
+            <p class="newsDisc">
+              This is a short description of the news article. It provides a quick summary for the reader.
+            </p>
+          </div>
         </div>
-
       </template>
     </main>
 
