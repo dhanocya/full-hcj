@@ -34,11 +34,16 @@ document.querySelector(".animals").appendChild(wraper)
 
 const filterbtn = document.querySelectorAll(".filter-nav a")
 filterbtn.forEach(el => {
-    el.addEventListener("click", e = handleClick(e))
+    el.addEventListener("click", e => handleClick(e))
 })
 
 function handleClick(e){
     let target = e.target
+    
+    if (e.target.classList.contains("bigshow")){
+        target = e.target.closest("a")
+    }
+
     e.preventDefault()
     filterbtn.forEach(el =>{
         el.classList.remove("active")
@@ -47,6 +52,7 @@ function handleClick(e){
 
     filterPets(target.dataset.filter)
 }
+
 
 function filterPets(species){
     const allpets = document.querySelectorAll(".animal-card")
@@ -64,4 +70,3 @@ function filterPets(species){
         })
     }
 }
-

@@ -140,6 +140,7 @@ button{
 .bigshow{
     display: none;
 }
+
 @media screen and (min-width: 768px) {
     .animal-card{
         grid-template-columns: 200px 2fr;
