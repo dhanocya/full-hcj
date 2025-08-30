@@ -7,6 +7,7 @@
 body{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: rgb(45, 45, 45);
+  color: white;
 }
 
 header{
@@ -19,17 +20,21 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  height: 100vh;
 }
 
 .text,.img{
+  min-width: 200px;
+  min-height: 300px;
+  width: 45vw;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 1rem;
-  gap: 1rem;
+  gap: 0.5rem;
+  margin: 0.5rem;
 }
 
 .text button{
@@ -97,4 +102,10 @@ footer{
 .hide{
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero{
+    height: auto;
+  }
 }
