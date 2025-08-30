@@ -52,6 +52,7 @@ header{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
 }
 
 .heading{
@@ -67,6 +68,7 @@ header{
 }
 
 .productCard{
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -105,7 +107,7 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-  .hero{
+  .hero, .productCard , .products{
     height: auto;
   }
 }
