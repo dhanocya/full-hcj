@@ -147,6 +147,10 @@ hana-viewer{
     height: 100%
 }
 
+ul > li:hover{
+    border-bottom: 1px solid rgb(174, 32, 32);
+}
+
 @media screen and (min-width: 375px) and (max-width: 700px){
     main{
         display: flex;
